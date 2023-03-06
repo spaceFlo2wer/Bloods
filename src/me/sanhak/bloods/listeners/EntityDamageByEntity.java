@@ -29,7 +29,7 @@ public class EntityDamageByEntity implements Listener {
 
 			// drop blood
 			damagerPlayer.getLevel().dropItem(dropLocation,
-					new Item(ItemID.REDSTONE_DUST, null, (int) ((damage / 100) * 0.5) * 5));
+					new Item(ItemID.REDSTONE_DUST, null, (int) ((damage / 100) * 0.5) %5));
 		}
 	}
 }
